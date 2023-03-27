@@ -5,16 +5,16 @@
     <title>Todo List</title>
 
     <!-- Set the charset we're using to UTF-8 -->
-    <meta charset="UTF-8" >
+    <meta charset="UTF-8" />
 
     <!-- Set the screens default zoom / scale to 1 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="stylesheet" href="reset.css" >
+    <link rel="stylesheet" href="reset.css" />
 
-    <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div id="mySidebar" class="sidebar">
@@ -38,14 +38,17 @@
 
       <div id="myDIV" class="header">
         <h2>Todo List</h2>
-        <input type="text" id="myInput" placeholder="Title..." >
+        <input type="text" id="myInput" placeholder="Title..." />
         <span onclick="newElement()" class="addBtn">Add</span>
       </div>
 
       <ul id="myUL"></ul>
 
       <div id="empty-todo-list" class="empty-todo-list">
-      <img src="IMD 1005 assignment 3 empty icon img.png" alt="Empty Todo List image">
+        <img
+          src="IMD 1005 assignment 3 empty icon img.png"
+          alt="Empty Todo List image"
+        />
         <p>Your Todo List is Empty</p>
         <button onclick="document.getElementById('myInput').focus()">
           Add Item
@@ -87,5 +90,6 @@
       // Call checkEmptyTodoList function on page load and after adding new task
       window.onload = checkEmptyTodoList;
     </script>
+    <script src="javascript.js"></script>
   </body>
 </html>
